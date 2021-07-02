@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Side from './components/Side/Side';
+import Header from './components/Header/Header';
+import About from './pages/About/About';
+import Projects from './pages/Projects/Projects';
+import Contact from './pages/Contact/Contact';
+import styles from './App.module.scss';
+import { AnimatePresence } from 'framer-motion';
+import { Switch, Route, useLocation } from 'react-router-dom';
 
-function App() {
+const App: React.FC = () => {
+  const location = useLocation();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <Header />
+        </div>
+        <div className={styles.side}>
+          <Side />
+        </div>
+        <div className={styles.main}>
+          <AnimatePresence>
+            <Switch>
+              <Route path="/about" component={About} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/contact" component={Contact} />
+            </Switch>
+          </AnimatePresence>
+        </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;

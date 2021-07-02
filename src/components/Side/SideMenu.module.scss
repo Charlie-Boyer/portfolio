@@ -1,0 +1,20 @@
+.container {
+  a {
+    text-decoration: none;
+    :visited {
+      color: unset;
+    }
+  }
+}
+
+.menu_elem {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem;
+  text-align: end;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
