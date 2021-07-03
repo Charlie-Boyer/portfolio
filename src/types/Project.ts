@@ -1,4 +1,4 @@
-import { Technos } from "../data/projects";
+import { Technos } from '../data/projects';
 
 export type Project = {
   title: string;

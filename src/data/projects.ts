@@ -1,3 +1,5 @@
+import tetris from '../images/tetris.png';
+
 export enum Technos {
   HTML,
   CSS,
@@ -5,14 +7,14 @@ export enum Technos {
   TYPESCRIPT,
   NODEJS,
   REACT,
-  WEBSOCKET
+  WEBSOCKET,
 }
 
 const projectList = [
   {
     title: 'Tetris Game',
     technos: [Technos.HTML, Technos.CSS, Technos.REACT],
-    imgUrl: 'images/tetris.png',
+    imgUrl: tetris,
     description: 'Ce projet est une copie de Tetris réalisée en React.',
     challenges:
       "Algorythmes et structures de données avancées, gestion d'état et closures, variables d'instances et useRef()",
@@ -23,15 +25,21 @@ const projectList = [
     imgUrl: 'images/portfolio.png',
     description: 'Mon portfolio',
     challenges:
-      "Architecture de projet, Utilisation de la librairie framer motion",
+      'Architecture de projet, Utilisation de la librairie framer motion',
   },
   {
     title: 'Allocrew',
-    technos: [Technos.HTML, Technos.CSS, Technos.REACT, Technos.NODEJS, Technos.WEBSOCKET],
+    technos: [
+      Technos.HTML,
+      Technos.CSS,
+      Technos.REACT,
+      Technos.NODEJS,
+      Technos.WEBSOCKET,
+    ],
     imgUrl: 'images/allocrew.png',
     description: 'Application front du projet Allocrew',
     challenges:
-      "Architecture de projet, utilisation de React Context, Authentification et autorisation, LocalStorage et JWTtoken, Messagerie instantannée",
+      'Architecture de projet, utilisation de React Context, Authentification et autorisation, LocalStorage et JWTtoken, Messagerie instantannée',
   },
 ];
 

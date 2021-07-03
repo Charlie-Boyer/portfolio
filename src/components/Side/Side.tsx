@@ -1,5 +1,6 @@
 import styles from './Side.module.scss';
 import SideMenu from './SideMenu';
+import me from '../../images/me.jpg';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -11,7 +12,7 @@ function Side() {
   return (
     <div className={styles.container}>
       <div className={styles.picture}>
-        <img src="images/me.jpg" alt="" />
+        <img src={me} alt="charlie_boyer" />
       </div>
       <div className={styles.menu}>
         <SideMenu />
