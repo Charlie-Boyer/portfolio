@@ -5,10 +5,9 @@ import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import styles from './App.module.scss';
 import { AnimatePresence } from 'framer-motion';
-import { Switch, Route, useLocation } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
-  const location = useLocation();
   return (
     <>
       <div className={styles.container}>

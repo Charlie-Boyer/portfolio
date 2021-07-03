@@ -1,17 +1,9 @@
-import React from 'react';
 import styles from './About.module.scss';
-import { motion } from 'framer-motion';
-import transition from '../../common/transition';
+import Container from '../../components/Container/Container';
 
-function About() {
+const About: React.FC = () => {
   return (
-    <motion.div
-      initial="out"
-      exit="out"
-      animate="in"
-      variants={transition}
-      className={styles.container}
-    >
+    <Container customClass={styles.container}>
       <p className="textTitle">Colour is important too</p>
       <br />
       <p className="text">
@@ -25,7 +17,7 @@ function About() {
         the site in direct sunlight....I am sure you know how annoying that can
         be on low contrast sit👍🙌es!).
       </p>
-    </motion.div>
+    </Container>
   );
 }
 

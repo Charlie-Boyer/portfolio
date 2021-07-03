@@ -1,20 +1,19 @@
-import React from 'react';
 import styles from './Projects.module.scss';
-import transition from '../../common/transition';
-import { motion } from 'framer-motion';
+import Container from '../../components/Container/Container';
+import { Project } from '../../types/Project';
+import projectList from '../../data/projects';
+import Card from '../../components/Card/Card';
 
-function Projects() {
+const Projects: React.FC = () => {
   return (
-    <motion.div
-      initial="out"
-      exit="out"
-      animate="in"
-      variants={transition}
-      className={styles.container}
-    >
-      Projects
-    </motion.div>
+    <Container customClass={styles.container}>
+      {projectList.map((project) => (
+        <div className={styles.card}>
+          <Card project={project}></Card>
+        </div>
+      ))}
+    </Container>
   );
-}
+};
 
 export default Projects;

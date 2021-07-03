@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -7,7 +7,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <Suspense fallback={<div>Chargement...</div>}>
+        <App />
+      </Suspense>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
