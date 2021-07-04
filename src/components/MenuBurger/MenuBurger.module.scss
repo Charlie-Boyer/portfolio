@@ -1,0 +1,36 @@
+.container {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  background-color: #1c4587;
+  padding: 1rem;
+  z-index: 10;
+}
+.toggle {
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.menu {
+  width: 100%;
+  background-color: #1c4587;
+  position: fixed;
+  top: 2rem;
+  right: 0;
+  padding-top: 3rem;
+  z-index: 0;
+}
+
+.menu_elem {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}

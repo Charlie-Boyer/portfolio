@@ -1,11 +1,10 @@
 import styles from './Side.module.scss';
-import SideMenu from './SideMenu';
+import Menu from '../Menu/Menu';
 import me from '../../images/me.jpg';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 
 library.add(fab);
 function Side() {
@@ -15,7 +14,7 @@ function Side() {
         <img src={me} alt="charlie_boyer" />
       </div>
       <div className={styles.menu}>
-        <SideMenu />
+        <Menu customClass={styles.menu_elem} />
       </div>
       <div className={styles.socials}>
         <a

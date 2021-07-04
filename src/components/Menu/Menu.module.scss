@@ -1,65 +1,9 @@
-.desktop {
-  display: none;
-}
-
-.menu_toggler {
-  position: fixed;
-  right: 0 + 1rem;
-  top: 0 + 1rem;
-  color: black;
-  z-index: 1;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  z-index: 2;
-}
-
-.ul {
-  margin-top: 3rem;
-  list-style: none;
-  li {
-    display: block;
-    text-align: center;
-    padding: 3rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 4rem;
-  }
-}
-
-@media (min-width: 890px) {
-  .mobile {
-    display: none;
-  }
-
-  .desktop {
-    display: initial;
-    .menu {
-      all: initial;
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 2;
-      background-color: white;
-      width: 100%;
-      .ul {
-        margin-top: initial;
-        display: flex;
-        justify-content: space-around;
-
-        li {
-          padding: 1rem;
-          text-align: center;
-          font-weight: 400;
-          font-size: 2rem;
-        }
-      }
+.container {
+  a {
+    text-decoration: none;
+    :visited {
+      color: unset;
     }
   }
 }
+

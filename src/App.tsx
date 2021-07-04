@@ -1,18 +1,18 @@
 import Side from './components/Side/Side';
-import Header from './components/Header/Header';
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import styles from './App.module.scss';
 import { AnimatePresence } from 'framer-motion';
 import { Switch, Route } from 'react-router-dom';
+import MenuBurger from './components/MenuBurger/MenuBurger';
 
 const App: React.FC = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.header}>
-          <Header />
+        <div className={styles.mobile_menu}>
+          <MenuBurger />
         </div>
         <div className={styles.side}>
           <Side />
