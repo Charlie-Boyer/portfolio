@@ -1,13 +1,14 @@
-import styles from './About.module.scss';
+import styles from './Skills.module.scss';
 import Container from '../../components/Container/Container';
+import Cube3d from '../../components/Cube3d/Cube3d';
 import me from '../../images/me.jpg';
 
-const About: React.FC = () => {
+const Skills: React.FC = () => {
   return (
     <>
       <Container customClass={styles.container}>
         <div className={styles.img_container}>
-          <img src={me} alt="charlie_boyer" />
+          <Cube3d />
         </div>
         <div className={styles.about}>
           <h2 className="textTitle">Colour is important too</h2>
@@ -29,4 +30,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Skills;
