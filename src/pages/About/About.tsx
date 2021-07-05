@@ -10,18 +10,33 @@ const About: React.FC = () => {
           <img src={me} alt="charlie_boyer" />
         </div>
         <div className={styles.about}>
-          <h2 className="textTitle">Colour is important too</h2>
-          <br />
+          <h2 className="textTitle">Qui je suis ?</h2>
           <p className="text">
-            Super quick one here - colour contrast is important.
-            <br />A lot of star rating systems use yellow stars with no border.
-            This provides terrible contrast wit🎶h the background and can be an
-            issue for people with low contrast perception.
-            <br />
-            As such I have a dark grey border around my stars so they stand out
-            even for people with contrast perception impairments (or people
-            trying to use the site in direct sunlight....I am sure you know how
-            annoying that can be on low contrast sit👍🙌es!).
+            <span>Nom:</span> Boyer
+          </p>
+          <p className="text">
+            <span>Prénom:</span> Charlie
+          </p>
+          <p className="text">
+            <span>Age:</span> 35 ans
+          </p>
+          <p className="text">
+            <span>Métier:</span> Développeur Web
+          </p>
+          <p className="text">
+            <span>Langages:</span> React, Nodejs, Typescript, Php, Java
+          </p>
+          <p className="text">
+            <span>Ville:</span> Quimper
+          </p>
+          <p className="text">
+            <span>Centre d'intérêts:</span> Piano 🎹, Fitness 🏋🏾‍♀️, Jeux Vidéos 🕹
+          </p>
+          <p className="text">
+            <span>Qualités:</span> Curieux, Optimiste, Logique
+          </p>
+          <p className="text">
+            <span>Défauts:</span> Indécis, Distrait, Impatient
           </p>
         </div>
       </Container>

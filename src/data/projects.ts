@@ -1,4 +1,6 @@
-import tetris from '../images/tetris.png';
+import tetris from '../images/tetris.jpg';
+import portfolio from '../images/portfolio.jpg';
+import allocrew from '../images/allocrew.jpg';
 
 export enum Technos {
   HTML,
@@ -13,6 +15,7 @@ export enum Technos {
 const projectList = [
   {
     title: 'Tetris Game',
+    url: 'https://puzl.charlie-boyer.me',
     technos: [Technos.HTML, Technos.CSS, Technos.REACT],
     imgUrl: tetris,
     description: 'Ce projet est une copie de Tetris réalisée en React.',
@@ -21,14 +24,16 @@ const projectList = [
   },
   {
     title: 'Portfolio',
+    url: 'https://www.charlie-boyer.me',
     technos: [Technos.HTML, Technos.CSS, Technos.REACT, Technos.TYPESCRIPT],
-    imgUrl: 'images/portfolio.png',
+    imgUrl: portfolio,
     description: 'Mon portfolio',
     challenges:
       'Architecture de projet, Utilisation de la librairie framer motion',
   },
   {
     title: 'Allocrew',
+    url: 'https://allocrew.herokuapp.com/',
     technos: [
       Technos.HTML,
       Technos.CSS,
@@ -36,7 +41,7 @@ const projectList = [
       Technos.NODEJS,
       Technos.WEBSOCKET,
     ],
-    imgUrl: 'images/allocrew.png',
+    imgUrl: allocrew,
     description: 'Application front du projet Allocrew',
     challenges:
       'Architecture de projet, utilisation de React Context, Authentification et autorisation, LocalStorage et JWTtoken, Messagerie instantannée',

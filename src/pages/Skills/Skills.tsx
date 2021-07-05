@@ -11,18 +11,19 @@ const Skills: React.FC = () => {
           <Cube3d />
         </div>
         <div className={styles.about}>
-          <h2 className="textTitle">Colour is important too</h2>
-          <br />
+          <h2 className="textTitle">Mes compétences</h2>
           <p className="text">
-            Super quick one here - colour contrast is important.
-            <br />A lot of star rating systems use yellow stars with no border.
-            This provides terrible contrast wit🎶h the background and can be an
-            issue for people with low contrast perception.
-            <br />
-            As such I have a dark grey border around my stars so they stand out
-            even for people with contrast perception impairments (or people
-            trying to use the site in direct sunlight....I am sure you know how
-            annoying that can be on low contrast sit👍🙌es!).
+            La plupart du temps je développe en Javascript (React, Nodejs) mais
+            suis capable d'intervenir sur d'autre langages comme php/symfony ou
+            bien java/spring.
+          </p>
+          <p className="text">
+            J'apprecie aussi bien le développement back que front.
+          </p>
+          <p className="text">
+            J'aime tout ce qui est architecture micro-services, single page
+            application, et accorde beaucoup d'importance à l'expérience
+            utilisateur et à la robustesse des applications en général.
           </p>
         </div>
       </Container>

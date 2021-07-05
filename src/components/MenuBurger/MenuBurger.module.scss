@@ -4,7 +4,7 @@
   width: 100%;
   background-color: #1c4587;
   padding: 1rem;
-  z-index: 10;
+  z-index: 1;
 }
 .toggle {
   color: white;
@@ -20,15 +20,29 @@
   top: 2rem;
   right: 0;
   padding-top: 3rem;
-  z-index: 0;
 }
 
 .menu_elem {
   font-family: 'Poppins', sans-serif;
   color: white;
-  font-size: 3rem;
+  font-size: 1.5rem;
   padding: 1rem;
   text-align: center;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  cursor: pointer;
+  color: white;
+  margin-right: 1rem;
   opacity: 0.5;
   &:hover {
     opacity: 1;

@@ -4,11 +4,18 @@
   background-color: #f8f8f8;
   border-left: #bbbbbb;
   border-top: #ffffff;
-  padding: 4rem 2rem;
   overflow-y: auto;
+  padding: 0 2rem;
 
   h2 {
     border-bottom: 2px solid #1c4587;
+    margin-top: 2rem;
+  }
+  span {
+    font-weight: 600;
+  }
+  p {
+    margin-top: 1rem;
   }
 }
 
@@ -20,16 +27,20 @@
 
 @media (min-width: 880px) {
   .container {
+    padding: 4rem 2rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
+    .about {
+      max-width: 40rem;
+    }
   }
 
   .img_container {
     padding-top: 4rem;
     text-align: right;
-    width: 50%;
+    width: 20%;
     img {
       width: 100%;
     }
