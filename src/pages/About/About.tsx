@@ -32,12 +32,6 @@ const About: React.FC = () => {
           <p className="text">
             <span>Centre d'intérêts:</span> Piano 🎹, Fitness 🏋🏾‍♀️, Jeux Vidéos 🕹
           </p>
-          <p className="text">
-            <span>Qualités:</span> Curieux, Optimiste, Logique
-          </p>
-          <p className="text">
-            <span>Défauts:</span> Indécis, Distrait, Impatient
-          </p>
         </div>
       </Container>
     </>

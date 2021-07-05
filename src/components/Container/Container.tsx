@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import transition from '../../common/transition';
-import styles from './Container.module.scss';
 
 interface Props {
   customClass: string;
